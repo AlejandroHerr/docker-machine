@@ -1,0 +1,7 @@
+[submodule "mqtt"]
+	path = mqtt
+	url = git@github.com:AlejandroHerr/docker-mosquitto-mongodb.git
+
+[submodule "nginx-proxy"]
+	path = nginx-proxy
+	url = git@github.com:AlejandroHerr/docker-compose-letsencrypt-nginx-proxy-companion.git
