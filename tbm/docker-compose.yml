@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  hello-world:
+    build: ./serveo
+    volumes:
+      - /home/alejandro/.ssh/serveo:/etc/serveo/.ssh/key:ro
+    ports:
+      - "2222:2222"
+    networks:
+      - webproxy
+    environment:
+      # VIRTUAL_HOST: ssherveo.alejandroherr.me
+      # VIRTUAL_PORT: "6666"
+      # LETSENCRYPT_HOST: ssherveo.alejandroherr.me
+      # LETSENCRYPT_EMAIL: ahernandezc@protonmail.com
+
+networks:
+  webproxy:
+    external: true

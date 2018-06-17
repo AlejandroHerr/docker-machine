@@ -1,0 +1,9 @@
+{
+    "eslint.enable": true,
+    "flow.enabled": false,
+    "cSpell.words": [
+        "camo",
+        "mosquitto",
+        "mqtts"
+    ]
+}
